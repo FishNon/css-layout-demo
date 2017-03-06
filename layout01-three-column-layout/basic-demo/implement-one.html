@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏式布局-绝对定位</title>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            min-width: 600px;
+            height: 100%;
+            border: 1px solid #999;
+        }
+
+        .column {
+            height: 100%;
+            background: #eee;
+            border: 1px solid #999;
+        }
+
+        #left {
+            position: absolute;
+            width: 240px;
+            left: 0;
+            top: 0;
+        }
+
+        #right {
+            position: absolute;
+            width: 180px;
+            right: 0;
+            top: 0;
+        }
+
+        #main {
+            padding: 0 180px 0 240px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="left" class="column">
+        <h1>left content</h1>
+    </div>
+    <div id="main" class="column">
+        <h1>main content</h1>
+    </div>
+    <div id="right" class="column">
+        <h1>right content</h1>
+    </div>
+</div>
+</body>
+</html>

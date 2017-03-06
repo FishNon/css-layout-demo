@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏式布局-浮动</title>
+    <style>
+        body,html{
+            height:100%;
+        }
+        .container {
+            padding: 20px;
+            height: 100%;
+            min-width: 700px;
+            background: #eee;
+        }
+        .column{
+            padding: 20px;
+            border:1px solid #999;
+            background: #fff;
+        }
+        #left{
+            position: relative;
+            float: left;
+            width: 160px;
+        }
+        #right{
+            position: relative;
+            float: right;
+            width: 260px;
+        }
+        #main{
+            margin:0 320px 0 220px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="left" class="column">
+        <h1>left content</h1>
+    </div>
+    <div id="right" class="column">
+        <h1>right content</h1>
+    </div>
+    <div id="main" class="column">
+        <h1>main content</h1>
+    </div>
+</div>
+</body>
+</html>
