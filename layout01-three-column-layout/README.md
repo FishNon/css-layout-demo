@@ -9,9 +9,13 @@ Three Column Layout (三栏式布局)
 
 ## 浮动布局：
 * 分析：
-![浮动布局]()
+![浮动布局](https://github.com/fishnon/css-layout-demo/raw/master/layout01-three-column-layout/img/implement-01.png)
 * 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-two.html)
 * 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-two.html)
+
+注意，绝对定位与浮动定位的主要区别为定位的方式的不同：
+* 绝对定位布局主要是将左右两部分的```position```设置为```absolute```，然后设置中间元素的```margin```来定位中间元素；
+* 浮动定位布局主要是将左右两部分分别左右浮动，左元素设置```left：0```，右元素设置```right:0```，左右元素均设置```top:0```，然后设置中间元素的```margin```来定位中间元素；
 
 ## 圣杯布局：
 * 分析：
