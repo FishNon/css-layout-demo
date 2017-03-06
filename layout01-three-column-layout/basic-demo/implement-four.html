@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三栏式布局-圣杯布局（带padding）</title>
+    <style>
+        body {
+            min-width: 880px;
+        }
+
+        .container {
+            padding-left: 280px;
+            padding-right: 320px;
+        }
+
+        .column {
+            position: relative;
+            background: #eee;
+            float: left;
+        }
+
+        #main {
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        #left {
+            width: 200px;
+            padding: 0 20px;
+            margin-left: -100%;
+            right: 300px;
+        }
+
+        #right {
+            width: 200px;
+            padding: 0 20px;
+            margin-right: -280px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="main" class="column">
+        <h1>main content</h1>
+    </div>
+    <div id="left" class="column">
+        <h1>left content</h1>
+    </div>
+    <div id="right" class="column">
+        <h1>right content</h1>
+    </div>
+</div>
+</body>
+</html>
