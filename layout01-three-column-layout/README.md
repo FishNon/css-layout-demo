@@ -13,17 +13,53 @@ Three Column Layout (三栏式布局)
 * 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-two.html)
 * 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-two.html)
 
-注意，绝对定位与浮动定位的主要区别为定位的方式的不同：
+**注意，绝对定位与浮动定位的主要区别为定位的方式的不同：**
 * 绝对定位布局主要是将左右两部分的```position```设置为```absolute```，然后设置中间元素的```margin```来定位中间元素；
 * 浮动定位布局主要是将左右两部分分别左右浮动，左元素设置```left：0```，右元素设置```right:0```，左右元素均设置```top:0```，然后设置中间元素的```margin```来定位中间元素；
 
-## 圣杯布局：
+## 圣杯布局(不带padding)：
 * 分析：
-![圣杯布局]()
-* 源码位置：
-[]()
-* 效果查看：
-[点击查看]()
+![圣杯布局](https://github.com/fishnon/css-layout-demo/raw/master/layout01-three-column-layout/img/implement-02.png)
+**HTML 代码分析**
+```
+<div class="container">
+    <div id="main" class="column">Main</div>
+    <div id="left" class="column">Left</div>
+    <div id="right" class="column">Right</div>
+</div>
+```
+**CSS 代码分析**
+```
+body{
+    min-width : (2X + Y)px;
+}
+.container{
+    padding-left : Xpx;
+    padding-right : Ypx;
+}
+.column{
+    position : relative;
+    float : left;
+}
+#center{
+    width : 100%;
+}
+#left{
+    width : Xpx;
+    margin-left : -100%;
+    right : Xpx;
+}
+#right{
+    width : Ypx;
+    margin-right : -Ypx;
+}
+/*兼容IE6，样式前加星号的内容作用于IE6、IE7*/
+*html #left{
+    left : Ypx;
+}
+```
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-three.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-three.html)
 
 ## 双飞翼布局：
 * 分析：
