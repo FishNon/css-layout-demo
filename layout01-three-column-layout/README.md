@@ -4,14 +4,14 @@ Three Column Layout (三栏式布局)
 ## 绝对定位布局：
 * 分析：
 ![绝对定位布局](https://github.com/fishnon/css-layout-demo/raw/master/layout01-three-column-layout/img/implement-01.png)
-* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-one.html)
-* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-one.html)
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-01.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-01.html)
 
 ## 浮动布局：
 * 分析：
 ![浮动布局](https://github.com/fishnon/css-layout-demo/raw/master/layout01-three-column-layout/img/implement-01.png)
-* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-two.html)
-* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-two.html)
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-02.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-02.html)
 
 **注意，绝对定位与浮动定位的主要区别为定位的方式的不同：**
 * 绝对定位布局主要是将左右两部分的```position```设置为```absolute```，然后设置中间元素的```margin```来定位中间元素；
@@ -58,8 +58,8 @@ body{
     left : Ypx;
 }
 ```
-* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-three.html)
-* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-three.html)
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-03.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-03.html)
 
 ## 圣杯布局(带padding)
 * 分析：
@@ -99,17 +99,15 @@ body{
 #right{
     width:Ypx;
     padding: 0 zpx;
-    margin-right:-(Y + 2z + 2m)px;
+    margin-right:-(Y + 2z + 2m + y)px;
     left:mpx;
 }
 ```
-* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-four.html)
-* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-four.html)
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-04.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-04.html)
 
 ## 双飞翼布局：
 * 分析：
-![双飞翼布局]()
-* 源码位置：
-[]()
-* 效果查看：
-[点击查看]()
+* 源码位置：[点击查看](https://github.com/FishNon/css-layout-demo/blob/master/layout01-three-column-layout/basic-demo/implement-05.html)
+* 效果查看：[点击查看](https://fishnon.github.io/css-layout-demo/layout01-three-column-layout/basic-demo/implement-05.html)
+* 相关链接：[极客学院 | CSS 经典布局之双飞翼布局](http://www.jikexueyuan.com/course/981.html)
